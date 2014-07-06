@@ -1,0 +1,27 @@
+---
+title: "Assignmentw5"
+output: html_document
+---
+
+1)
+Preallocated  method  is the fastest but you have to know in advance  how many the data frame will have
+
+x <- list()
+for (i in 1:10) {
+    x[[i]] <- i
+}
+
+x <- vector(mode = "list", length = 10)
+
+
+
+2)
+
+> data (Boston, package='MASS')
+> str(Boston)
+
+> GradeData<-subset(Boston, indus>0)
+> df = data.frame(GradeData)
+
+
+
